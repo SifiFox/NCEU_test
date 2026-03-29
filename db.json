@@ -1,0 +1,277 @@
+{
+  "tasks": [
+    {
+      "id": "task-101",
+      "title": "Подготовить релизный чеклист для версии 1.4",
+      "description": "Собрать финальный чеклист: smoke-тесты, проверка миграций, проверка критичных пользовательских сценариев и план отката.",
+      "status": "inProgress",
+      "priority": "high",
+      "deadline": "2026-04-02",
+      "tags": [
+        "release",
+        "qa"
+      ],
+      "createdAt": "2026-03-24T07:45:00.000Z",
+      "updatedAt": "2026-03-28T12:10:00.000Z"
+    },
+    {
+      "id": "task-102",
+      "title": "Согласовать тексты ошибок для формы авторизации",
+      "description": "Пройтись с дизайнером и аналитиком по текстам всех валидационных и серверных ошибок. Обновить словарь сообщений.",
+      "status": "todo",
+      "priority": "medium",
+      "deadline": "2026-04-06",
+      "tags": [
+        "copywriting",
+        "ux"
+      ],
+      "createdAt": "2026-03-25T10:20:00.000Z",
+      "updatedAt": "2026-03-25T10:20:00.000Z"
+    },
+    {
+      "id": "task-103",
+      "title": "Оптимизировать загрузку списка задач на слабых ноутбуках",
+      "description": "Сделать профилирование, сократить лишние рендеры, проверить результаты на референсной машине QA.",
+      "status": "inProgress",
+      "priority": "high",
+      "deadline": "2026-04-01",
+      "tags": [
+        "performance",
+        "frontend"
+      ],
+      "createdAt": "2026-03-21T09:00:00.000Z",
+      "updatedAt": "2026-03-28T11:42:00.000Z"
+    },
+    {
+      "id": "task-104",
+      "title": "Внедрить аудит-лог изменения статусов задач",
+      "description": "Логировать смену статуса с id пользователя, временем и старым/новым значением для последующего расследования инцидентов.",
+      "status": "inProgress",
+      "priority": "high",
+      "deadline": "2026-03-27",
+      "tags": [
+        "backend",
+        "security",
+        "testazxc",
+        "qw"
+      ],
+      "createdAt": "2026-03-18T08:10:00.000Z",
+      "updatedAt": "2026-03-28T11:23:14.387Z"
+    },
+    {
+      "id": "task-105",
+      "title": "Проверить корректность SLA-уведомлений по дедлайнам",
+      "description": "Сверить, что напоминания отправляются за 24 часа и за 2 часа до дедлайна для задач приоритетов medium/high.",
+      "status": "todo",
+      "priority": "high",
+      "deadline": "2026-03-31",
+      "tags": [
+        "notifications",
+        "sla"
+      ],
+      "createdAt": "2026-03-27T06:55:00.000Z",
+      "updatedAt": "2026-03-27T06:55:00.000Z"
+    },
+    {
+      "id": "task-106",
+      "title": "Обновить документацию по онбордингу разработчиков",
+      "description": "Актуализировать разделы: локальный запуск, окружения, типичные ошибки и чеклист первого pull request.",
+      "status": "done",
+      "priority": "low",
+      "deadline": "2026-03-29",
+      "tags": [
+        "docs",
+        "onboarding"
+      ],
+      "createdAt": "2026-03-17T12:10:00.000Z",
+      "updatedAt": "2026-03-28T09:30:00.000Z"
+    },
+    {
+      "id": "task-107",
+      "title": "Провести ретроспективу по инциденту с фильтрами",
+      "description": "Подготовить таймлайн, корневую причину и список предотвращающих действий. Согласовать с командой платформы.",
+      "status": "todo",
+      "priority": "medium",
+      "deadline": "2026-04-08",
+      "tags": [
+        "process",
+        "incident"
+      ],
+      "createdAt": "2026-03-26T14:30:00.000Z",
+      "updatedAt": "2026-03-28T11:23:25.395Z"
+    },
+    {
+      "id": "task-108",
+      "title": "Перенести настройки фич-флагов в единый реестр",
+      "description": "Собрать текущие флаги, удалить дубликаты, оформить единый конфиг и добавить описание владельцев.",
+      "status": "inProgress",
+      "priority": "medium",
+      "deadline": "2026-04-04",
+      "tags": [
+        "architecture",
+        "feature-flags"
+      ],
+      "createdAt": "2026-03-22T13:25:00.000Z",
+      "updatedAt": "2026-03-28T11:05:00.000Z"
+    },
+    {
+      "id": "task-109",
+      "title": "Пересобрать набор e2e smoke-тестов перед интеграцией",
+      "description": "Оставить только критичные сценарии: логин, создание задачи, изменение статуса, поиск и фильтры.",
+      "status": "inProgress",
+      "priority": "high",
+      "deadline": "2026-03-30",
+      "tags": [
+        "testing",
+        "e2e"
+      ],
+      "createdAt": "2026-03-20T11:40:00.000Z",
+      "updatedAt": "2026-03-28T12:35:00.000Z"
+    },
+    {
+      "id": "task-110",
+      "title": "Вынести общие UI-константы в дизайн-токены",
+      "description": "Выделить токены для цветов статусов, отступов и радиусов, подключить в карточках и детальной странице.",
+      "status": "done",
+      "priority": "medium",
+      "deadline": "2026-03-28",
+      "tags": [
+        "design-system",
+        "frontend"
+      ],
+      "createdAt": "2026-03-19T09:05:00.000Z",
+      "updatedAt": "2026-03-28T08:50:00.000Z"
+    },
+    {
+      "id": "task-111",
+      "title": "Разобраться с падением синхронизации тегов в staging",
+      "description": "Повторить баг на staging, собрать логи, проверить payload и поведение после редактирования задачи.",
+      "status": "inProgress",
+      "priority": "high",
+      "deadline": "2026-03-29",
+      "tags": [
+        "bugfix",
+        "staging"
+      ],
+      "createdAt": "2026-03-28T07:20:00.000Z",
+      "updatedAt": "2026-03-28T12:55:00.000Z"
+    },
+    {
+      "id": "task-112",
+      "title": "Подготовить демо для заказчика по новому дашборду",
+      "description": "Собрать демонстрационные данные, прогнать сценарий презентации и подготовить ответы на ожидаемые вопросы.",
+      "status": "todo",
+      "priority": "medium",
+      "deadline": "2026-04-09",
+      "tags": [
+        "demo",
+        "product"
+      ],
+      "createdAt": "2026-03-23T15:10:00.000Z",
+      "updatedAt": "2026-03-23T15:10:00.000Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": "tag-101",
+      "name": "frontend"
+    },
+    {
+      "id": "tag-102",
+      "name": "backend"
+    },
+    {
+      "id": "tag-103",
+      "name": "release"
+    },
+    {
+      "id": "tag-104",
+      "name": "qa"
+    },
+    {
+      "id": "tag-105",
+      "name": "ux"
+    },
+    {
+      "id": "tag-106",
+      "name": "performance"
+    },
+    {
+      "id": "tag-107",
+      "name": "security"
+    },
+    {
+      "id": "tag-108",
+      "name": "notifications"
+    },
+    {
+      "id": "tag-109",
+      "name": "sla"
+    },
+    {
+      "id": "tag-110",
+      "name": "docs"
+    },
+    {
+      "id": "tag-111",
+      "name": "onboarding"
+    },
+    {
+      "id": "tag-112",
+      "name": "incident"
+    },
+    {
+      "id": "tag-113",
+      "name": "feature-flags"
+    },
+    {
+      "id": "tag-114",
+      "name": "testing"
+    },
+    {
+      "id": "tag-115",
+      "name": "e2e"
+    },
+    {
+      "id": "tag-116",
+      "name": "design-system"
+    },
+    {
+      "id": "tag-117",
+      "name": "bugfix"
+    },
+    {
+      "id": "tag-118",
+      "name": "staging"
+    },
+    {
+      "id": "tag-119",
+      "name": "demo"
+    },
+    {
+      "id": "tag-120",
+      "name": "product"
+    },
+    {
+      "id": "tag-121",
+      "name": "architecture"
+    },
+    {
+      "id": "tag-122",
+      "name": "process"
+    },
+    {
+      "id": "tag-123",
+      "name": "copywriting"
+    },
+    {
+      "name": "testazxc",
+      "id": "jsKwb2zl4WY"
+    },
+    {
+      "name": "qw",
+      "id": "NcGI3DUsYVg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

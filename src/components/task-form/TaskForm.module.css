@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.formScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.footerActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.submitItem {
+  margin-bottom: 0;
+}
+
+.mobileModalWrap :global(.ant-modal) {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileModalWrap :global(.ant-modal-wrap) {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.mobileModalWrap :global(.ant-modal-container) {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mobileModalWrap :global(.ant-modal-content) {
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mobileModalWrap :global(.ant-modal-header) {
+  margin: 0;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  flex: 0 0 auto;
+}
+
+.mobileModalWrap :global(.ant-modal-body) {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.mobileModalWrap :global(.ant-modal-footer) {
+  margin: 0;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  border-top: 1px solid #f0f0f0;
+  flex: 0 0 auto;
+  background: #fff;
+}
+
+.mobileFormScroll {
+  flex: 1;
+  min-height: 0;
+  padding: 16px;
+  overflow-y: auto;
+}
