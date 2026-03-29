@@ -1,6 +1,4 @@
-# Task Manager SPA
-
-Одностраничное приложение для управления задачами на современном стеке: React + TypeScript + RTK Query + JSON Server.
+# Task Manager 
 
 ## Технологии
 
@@ -26,6 +24,16 @@
 - Визуальное выделение просроченных задач
 - Выбор тегов с поиском и созданием новых
 
+## Структура проекта
+
+- src/pages — экранные контейнеры (TaskListPage, TaskDetailPage), отвечают за сборку страницы и сценарии пользователя.
+- src/components — переиспользуемые UI-компоненты (TaskCard, TaskFilters, TaskForm, TagSelector).
+- src/hooks — прикладная логика и композиция поведения (модалки, удаление, фильтрация).
+- src/store/api — слой работы с сервером (baseApi, tasksApi, tagsApi) на основе RTK Query.
+- src/schemas — валидация форм (zod-схемы).
+- src/utils — утилиты форматирования дат и служебные функции.
+- src/constants, src/types — константы и доменные типы.
+
 ## Запуск проекта
 
 ### 1. Установить зависимости
@@ -44,40 +52,3 @@ npm run dev
 - Vite dev server (frontend)
 - JSON Server на `http://localhost:3001`
 
-### Дополнительные команды
-
-```bash
-npm run dev:client   # только frontend
-npm run dev:server   # только json-server
-npm run lint         # eslint
-npm run build        # production build
-npm run preview      # локальный preview
-```
-
-## Архитектура проекта
-
-```text
-src/
-  components/      # переиспользуемые UI-компоненты
-  constants/       # единые константы и словари (DRY)
-  hooks/           # кастомные хуки бизнес-логики
-  pages/           # роут-страницы
-  schemas/         # zod-схемы валидации
-  store/
-    api/           # RTK Query: baseApi + endpoints
-  types/           # доменные типы
-  utils/           # утилиты
-```
-
-### Поток данных
-
-1. Компоненты страниц вызывают RTK Query hooks.
-2. RTK Query обращается к JSON Server через `/api` proxy Vite.
-3. После мутаций выполняется кеш-инвалидация (`Task`, `Tag`), список обновляется автоматически.
-
-### Принципы реализации
-
-- DRY: единые константы для статусов/приоритетов/сортировки
-- KISS: простая композиция компонентов и локальный state фильтров
-- YAGNI: без лишних абстракций и middleware поверх RTK Query
-- Оптимизация: `React.memo`, `useMemo`, `useCallback`, lazy loading страницы деталей
