@@ -9,9 +9,13 @@ const TaskDetailPage = lazy(() =>
   })),
 );
 
+const basePath = import.meta.env.BASE_URL || '/';
+
+
 function App() {
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basePath}>
       <Layout style={{ minHeight: '100vh', padding: '24px' }}>
         <Layout.Content style={{ maxWidth: 1200, width: '100%', margin: '0 auto' }}>
           <Suspense fallback={<Spin size="large" />}>
